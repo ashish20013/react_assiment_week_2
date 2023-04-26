@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.flax{
+    display: flex;
+    height:  100vh;
+    width: 100vd;
+    background-color: rgb(160, 163, 165);
+    flex-direction: row;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between 30px;
+    flex-wrap: wrap;
+
+}
+.product1 .product2 .product3 .product4 .product5{
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px;
+
+    height: 8%;
+    width: 5%;
+    margin: 4px rgb(82, 80, 80);
+    background-color: white;
+
+}
+.d{
+    height: 5px;
+    width: 6px;
+    border-radius: 50% solid black;
+    float: center;
+}
+.a{
+    text-align: center;
+
+}
+
+
