@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Inbox from './component/inbox';
 
 function App() {
-  return (
+
+// api =  https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP 
+
+const getOtp=()=>{
+
+let number = document.getElementById("input")
+console.log(number.value)
+//   fetch ("https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP")
+
+// } .tehen((responce)=>responce.json)
+//   .then(())
+fetch("https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP", {
+  method: "post",
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+  },
+
+  
+  body: JSON.stringify({
+    mobile : number.value
+  })
+})
+// .then( (response) => { 
+  
+// });
+
+}
+ return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={getOtp}> Get OTP </button>
+      <Inbox/>
     </div>
   );
 }
