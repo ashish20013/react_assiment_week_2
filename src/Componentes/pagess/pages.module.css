@@ -1,0 +1,63 @@
+
+.head{
+
+    display:  flex;
+}
+.content{
+    margin: 20px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+}
+.read{
+    margin: 10px;
+    padding: 10px;
+    align-items: right;
+
+}
+
+.menu{
+    font-size: 5rem;
+    color: skyblue;
+    align-items: center;
+    
+}
+
+
+
+@media screen and (min-width : 1024px){
+    .head{
+        display: flex;
+            margin: 10px;
+            padding: 10px;
+            text-align-last: right;
+            align-content: end;
+            position: relative;
+            gap: 40px ;
+            font-size: 1rem;
+            color: blue;
+    }
+    .menu{
+        display: none;
+    }
+    
+    }
+    
+    @media screen and (min-width : 1424px){
+        .head{
+            display: flex;
+                margin: 10px;
+                padding: 10px;
+                text-align-last: right;
+                align-content: end;
+                position: relative;
+                gap: 40px ;
+                font-size: 1rem;
+                color: blue;
+        }
+        .menu{
+            display: none;
+        }
+        
+        }

@@ -1,0 +1,23 @@
+
+.head{
+    display: flex;
+        margin: 10px;
+        padding: 10px;
+        text-align-last: right;
+        align-content: end;
+        position: relative;
+        gap: 40px ;
+        font-size: 1rem;
+        color: blue;
+}
+.uper{
+    display: flex;
+    align-items: center;
+    
+    width: 20px;
+    
+}
+
+
+
+   
