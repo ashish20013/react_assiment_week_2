@@ -1,0 +1,42 @@
+.card {
+    min-height: 150px;
+    min-width: 350px;
+    background-color: #e6dddd;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.imge{
+border-radius: 50%;
+position: relative;
+max-height: 70%;
+max-width: 70%;
+left: 80px;
+margin:  20 px;
+padding-right: 10 px;
+
+}
+
+.he2{
+    position: relative;
+    left:  100px;
+ margin:  20 px;
+ padding-right: 10 px;
+ 
+}
+
+.pa{
+    
+    position: relative;
+    left:  100px;
+    margin:  20 px;
+    padding-right: 10 px;
+   }
+
+.he3{
+    position: relative;
+    left:  20px;
+    margin:  20 px;
+    padding-right: 10 px;
+   }
+
