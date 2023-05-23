@@ -11,7 +11,7 @@ useEffect(() => {
 
 const getSearch =()=>{
   return(
-<hi
+<h1>{search}</h1>
   )
 }
 
