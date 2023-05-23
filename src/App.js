@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import SearchBar from './component/atom/search-bar/search-bar';
 import './App.css';
+import {useState , useEffect} from 'react'
 
 function App() {
+  const [search , setSearch] = useState()
+
+useEffect(() => {
+  fetch(" http://cdn-api.co-vin.in/api/v2/admin/location/states ").then((Response)=>Response.json()).then((data)=>setSearch(data))
+}, [])
+
+const getSearch =()=>{
+  return(
+<hi
+  )
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SearchBar/>
     </div>
   );
 }
